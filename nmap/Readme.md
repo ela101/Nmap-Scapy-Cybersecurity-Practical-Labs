@@ -20,5 +20,19 @@ This folder contains all Nmap scans replicated from the classroom practical sess
 
 ![Smb Scan](./smb.png)
 
+5. SMB Shares Enumeration Command: nmap --script smb-enum-shares.nse -p445 10.6.6.23 Purpose: Lists accessible SMB shares.
+
+![Smb Share Scan](./smb_share.png)
+
+6. Manual Connection to SMB smbclient //10.6.6.23/print$ -N exit Purpose: Tests anonymous authentication to SMB share.
+
+7. Network Information ifconfig ip route cat /etc/resolv.conf
+
+8. Traffic Capture with tcpdump sudo tcpdump -i eth0 -s 0 -w ladies.pcap CTRL + C
+
+9. Wireshark Review Open capture: wireshark
+
+
+
 
 
